@@ -1,0 +1,237 @@
+
+
+  
+nav{
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.288) !important;
+}
+.logo{
+    width: 40px;
+    background-color:greenyellow;
+    border-radius: 50%;
+    padding: 0px;
+
+}
+.nav-item{
+    margin-left: 20px;
+}
+nav-item,li,a{
+    color: white !important;
+}
+.dropdown-item{
+    color: black !important;
+}
+.nav-item,li,a:hover{
+    color: goldenrod !important;
+}
+/* end of nav styles */
+#section{
+    background-position: center;
+    background-size: cover;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#section img:last-child{
+    position: absolute;
+    bottom: 10px;
+}
+.asideContents{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 20%;
+}
+.asideContents2{
+    color: white;
+    min-height: 110vh;
+    background-position: center;
+      }
+/* what we do section */
+.toggleSection{
+    display: flex;
+    min-height: 30vh;
+}
+.toggleSection div img{
+    display: block;
+    margin: 5vh auto;
+}
+.toggleImage1{
+    width: 33.3%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/* second image */
+.toggleImage2{
+    width: 33.3%;
+    text-align: center;
+}
+/* third image */
+.toggleImage3{
+    width: 33.3%;
+    text-align: center;
+}
+/* toggle */
+.initiallyHiden1{
+    display: none ;
+    margin: 5px 20px;
+    text-align: center;
+}
+.initiallyHiden2{
+    display: none ;
+    margin: 5px 20px;
+    text-align: center;
+}
+.initiallyHiden3{
+    display: none ;
+    margin: 5px 20px;
+    text-align: center;
+}
+/* make the what we do section responsive */
+
+@media screen and (max-width: 720px) and (min-width: 100px) {
+    .toggleImage1,.toggleImage2,.toggleImage3{
+        width: 100%;
+        float: left;
+    }
+}
+/* portfolio */
+.row{
+    margin-top: 3vh;
+}
+.rowElement{
+    width: 24%;
+    min-height: 24vh;
+    margin-left: 1%;
+}
+.rowElement img{
+    width: 100%;
+    height: auto;
+}
+
+.inittialltHiddenMain{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 33vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.initiallyHidden{
+    background-color: rgba(255, 255, 255, 0.63);
+    min-height: 33vh;
+    width: 100%;
+    display: none ;
+}
+.initiallyHidden h3{
+    padding-top: 12vh;
+    text-align: center;
+}
+/* rearrange the images on small screens */
+@media screen and (max-width: 850px) and (min-width: 600px) {
+    #rowElement{
+        width: 48% ;
+        margin: 2vh auto;
+        justify-content: space-around;
+        float: left ;
+    }
+}
+@media screen and (max-width: 599px) and (min-width: 100px) {
+    #rowElement{
+        width: 90% ;
+        margin: 1vh auto;
+        justify-content: space-around;
+        float: left ;
+    }
+}
+/* the form section */
+.myForm{
+    display: flex ;
+    flex-direction: column ;
+    justify-content:space-around ;
+    align-content: center ;
+    text-align: center ;
+    min-height: 80vh;
+    margin: auto;
+    color: white;
+}
+.form-group{
+    margin-left: 10px;
+    width: 100%;
+    align-content: space-around;
+    
+}
+.form-control{
+    background-color: rgba(255, 255, 255, 0) !important;
+    color: white !important;
+    border: thin solid white;
+}
+#myForm{
+    width: 50em;
+}
+.btn-default{
+    border: 1px solid white !important;
+    color: white !important;
+}
+/* change size of form on small screens */
+@media screen and (max-width: 720px) and (min-width: 100px) {
+    #myForm{
+        width: 100%;
+    }
+}
+/* The footer */
+.list-inline-item{
+    float: left !important;
+}
+.myList{
+    width: 100%;
+   margin: 5vh auto;
+   justify-content: center;
+   display: flex;
+    
+}
+.footer{
+    width: 100%;
+    margin: auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* slide show from right  home page*/
+    .slideRight {
+    width:auto;
+    overflow:hidden;
+    height: inherit;
+  }
+  .slideRight {
+    animation: 7s  slideRight;
+  }
+  @keyframes slideRight {
+    from {
+      margin-left: -100%;
+      width:auto; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: auto;
+    }
+  }
+  /* left slide show about us page*/
+
+
